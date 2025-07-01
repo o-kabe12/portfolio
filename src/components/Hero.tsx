@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { ChevronDown, Code, Sparkles } from 'lucide-react';
 
 const Hero = () => {
   const [text, setText] = useState('');
   const [isTyping, setIsTyping] = useState(true);
-  const fullText = "Full-Stack Developer";
+  const fullText = "Frontend Developer";
 
   useEffect(() => {
     let index = 0;
@@ -21,8 +21,8 @@ const Hero = () => {
     return () => clearInterval(timer);
   }, []);
 
-  const scrollToAbout = () => {
-    const element = document.getElementById('about');
+  const scrollToWorks = () => {
+    const element = document.getElementById('works');
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
@@ -64,36 +64,34 @@ const Hero = () => {
         </div>
 
         <p className="text-xl text-gray-400 max-w-2xl mx-auto mb-12 leading-relaxed">
-          I craft digital experiences with clean code and innovative solutions. 
-          Passionate about creating beautiful, functional applications that make a difference.
+          このサイトは大壁のポートフォリオサイトです。
+          <br/>
+          私のスキルや作品を紹介していますので、ぜひご覧ください。
+          <br/>
+          SNSやGithubについてもリンクをまとめています。
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <button
-            onClick={scrollToAbout}
+            onClick={scrollToWorks}
             className="px-8 py-4 bg-gradient-to-r from-blue-500 to-emerald-500 text-white font-semibold rounded-lg
                      hover:from-blue-600 hover:to-emerald-600 transform hover:scale-105 transition-all duration-300
                      shadow-lg hover:shadow-xl"
           >
             Explore My Work
           </button>
-          <a
-            href="mailto:contact@okabe.dev"
-            className="px-8 py-4 border border-gray-600 text-gray-300 font-semibold rounded-lg
-                     hover:border-white hover:text-white transform hover:scale-105 transition-all duration-300"
-          >
-            Get In Touch
-          </a>
         </div>
       </div>
 
       {/* Scroll Indicator */}
-      <button
-        onClick={scrollToAbout}
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-gray-400 hover:text-white transition-colors duration-300 animate-bounce"
-      >
-        <ChevronDown size={32} />
-      </button>
+      <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2">
+        <button
+          onClick={scrollToWorks}
+          className="text-gray-400 hover:text-white transition-colors duration-300 animate-bounce"
+        >
+          <ChevronDown size={32} />
+        </button>
+      </div>
     </section>
   );
 };

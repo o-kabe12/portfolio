@@ -1,32 +1,31 @@
-import React from 'react';
-import { Github, Linkedin, Mail, Twitter, Heart } from 'lucide-react';
+import { Github, Heart } from 'lucide-react';
+import XIcon from '../assets/img/XIcon';
+import NoteIcon from '../assets/img/NoteIcon';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const socialLinks = [
-    { icon: <Github size={20} />, href: "https://github.com", label: "GitHub" },
-    { icon: <Linkedin size={20} />, href: "https://linkedin.com", label: "LinkedIn" },
-    { icon: <Twitter size={20} />, href: "https://twitter.com", label: "Twitter" },
-    { icon: <Mail size={20} />, href: "mailto:contact@okabe.dev", label: "Email" }
+    { icon: <Github size={20} color="#fff" />, href: "https://github.com/o-kabe12/", label: "GitHub" },
+    { icon: <XIcon size={20} color="#fff" />, href: "https://x.com/8mNjXtrehu33800", label: "X" },
+    { icon: <NoteIcon size={20} color="#fff" />, href: "https://note.com/firm_orca8445", label: "Note" },
   ];
 
   const quickLinks = [
     { name: "About", href: "#about" },
     { name: "Skills", href: "#skills" },
-    { name: "Projects", href: "#projects" },
-    { name: "Contact", href: "#contact" }
+    { name: "Works", href: "#works" },
   ];
 
   return (
     <footer id="contact" className="bg-gradient-to-t from-black via-gray-900 to-black border-t border-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+        <div className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-emerald-400 bg-clip-text text-transparent mb-6">
+          OKABE
+        </div>
+        <div className="md:flex justify-between mb-8">
           {/* Brand Section */}
-          <div className="space-y-4">
-            <div className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-emerald-400 bg-clip-text text-transparent">
-              OKABE
-            </div>
+          <div className="w-full md:w-1/2 space-y-4">
             <p className="text-gray-400 leading-relaxed">
               Crafting digital experiences with passion and precision. 
               Let's create something amazing together.
@@ -50,17 +49,16 @@ const Footer = () => {
               ))}
             </div>
           </div>
-
           {/* Quick Links */}
-          <div className="space-y-4">
+          <div className="space-y-4 w-full md:w-1/2 mt-8 md:mt-0">
             <h3 className="text-lg font-semibold text-white">Quick Links</h3>
-            <nav className="flex flex-col space-y-2">
+            <nav className="flex gap-4">
               {quickLinks.map((link) => (
                 <a
                   key={link.name}
                   href={link.href}
                   className="text-gray-400 hover:text-white transition-colors duration-200 
-                           hover:translate-x-1 transform"
+                           hover:color-white"
                   onClick={(e) => {
                     e.preventDefault();
                     const element = document.getElementById(link.href.substring(1));
@@ -75,23 +73,6 @@ const Footer = () => {
             </nav>
           </div>
 
-          {/* Contact Info */}
-          <div className="space-y-4">
-            <h3 className="text-lg font-semibold text-white">Get In Touch</h3>
-            <div className="space-y-3">
-              <a
-                href="mailto:contact@okabe.dev"
-                className="flex items-center text-gray-400 hover:text-white transition-colors duration-200"
-              >
-                <Mail size={16} className="mr-3" />
-                contact@okabe.dev
-              </a>
-              <p className="text-gray-400 text-sm leading-relaxed">
-                Available for freelance opportunities and exciting projects. 
-                Let's discuss how we can work together!
-              </p>
-            </div>
-          </div>
         </div>
 
         {/* Bottom Section */}

@@ -1,5 +1,4 @@
-import React from 'react';
-import { Code2, Database, Globe, Smartphone, Server, Palette } from 'lucide-react';
+import { Code2, Briefcase } from 'lucide-react';
 
 const Skills = () => {
   const skillCategories = [
@@ -7,43 +6,21 @@ const Skills = () => {
       icon: <Code2 size={24} />,
       title: "Frontend Development",
       skills: [
-        { name: "React/Next.js", level: 90 },
-        { name: "TypeScript", level: 85 },
-        { name: "Tailwind CSS", level: 88 },
-        { name: "Vue.js", level: 75 }
+        { name: "HTML/CSS", level: 90 },
+        { name: "JavaScript", level: 70 },
+        { name: "React/Next.js", level: 30 },
+        { name: "TypeScript", level: 20 }
       ],
       color: "from-blue-500 to-cyan-500"
     },
     {
-      icon: <Server size={24} />,
-      title: "Backend Development",
-      skills: [
-        { name: "Node.js", level: 85 },
-        { name: "Python", level: 80 },
-        { name: "Go", level: 70 },
-        { name: "REST APIs", level: 90 }
-      ],
-      color: "from-emerald-500 to-teal-500"
-    },
-    {
-      icon: <Database size={24} />,
-      title: "Database & Cloud",
-      skills: [
-        { name: "PostgreSQL", level: 85 },
-        { name: "MongoDB", level: 80 },
-        { name: "AWS", level: 75 },
-        { name: "Docker", level: 78 }
-      ],
-      color: "from-purple-500 to-pink-500"
-    },
-    {
-      icon: <Palette size={24} />,
+      icon: <Briefcase size={24} />,
       title: "Design & Tools",
       skills: [
-        { name: "UI/UX Design", level: 85 },
-        { name: "Figma", level: 88 },
-        { name: "Git", level: 90 },
-        { name: "Agile/Scrum", level: 82 }
+        { name: "XD / Figma cording", level: 90 },
+        { name: "Git", level: 80 },
+        { name: "Supabase", level: 20 },
+        { name: "生成AI（ChatGPT / Copilot等）活用", level: 75 }
       ],
       color: "from-orange-500 to-red-500"
     }
@@ -96,25 +73,6 @@ const Skills = () => {
               </div>
             </div>
           ))}
-        </div>
-
-        {/* Additional Technologies */}
-        <div className="mt-16 text-center">
-          <h3 className="text-2xl font-semibold text-white mb-8">Other Technologies</h3>
-          <div className="flex flex-wrap justify-center gap-4">
-            {[
-              'GraphQL', 'Redis', 'Elasticsearch', 'Jenkins', 'Kubernetes', 
-              'Firebase', 'Stripe', 'WebSocket', 'PWA', 'Testing (Jest, Cypress)'
-            ].map((tech) => (
-              <span
-                key={tech}
-                className="px-4 py-2 bg-gray-800 border border-gray-700 rounded-full text-gray-300 
-                         hover:border-gray-500 hover:text-white transition-all duration-300"
-              >
-                {tech}
-              </span>
-            ))}
-          </div>
         </div>
       </div>
     </section>

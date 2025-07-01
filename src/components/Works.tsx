@@ -1,75 +1,38 @@
-import React from 'react';
 import { ExternalLink, Github, Sparkles } from 'lucide-react';
 
-const Projects = () => {
+const Works = () => {
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "Full-stack e-commerce solution with React, Node.js, and Stripe integration. Features include user authentication, product management, and real-time order tracking.",
-      image: "https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=800",
-      technologies: ["React", "Node.js", "PostgreSQL", "Stripe", "AWS"],
-      github: "https://github.com",
-      live: "https://example.com",
-      featured: true
-    },
-    {
-      title: "Task Management App",
-      description: "Collaborative project management tool with real-time updates, drag-and-drop functionality, and team collaboration features.",
-      image: "https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=800",
-      technologies: ["Vue.js", "Express", "MongoDB", "Socket.io"],
-      github: "https://github.com",
-      live: "https://example.com",
+      title: "Jicoca - エンジニア向け自己紹介カードアプリ",
+      description: "エンジニア向けの自己紹介カードを作成・共有できるアプリ。",
+      image: "/images/works_001.jpg",
+      technologies: ["Next.js","TypeScript", "Tailwind CSS", "Supabase","Copilot"],
+      github: "https://github.com/o-kabe12/self-introduction-card",
+      live: "https://self-introduction-card.vercel.app/",
       featured: false
     },
     {
-      title: "AI Chat Application",
-      description: "Modern chat application with AI integration, featuring real-time messaging, file sharing, and smart response suggestions.",
-      image: "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=800",
-      technologies: ["Next.js", "OpenAI API", "WebSocket", "Tailwind"],
-      github: "https://github.com",
-      live: "https://example.com",
-      featured: true
-    },
-    {
-      title: "Weather Dashboard",
-      description: "Beautiful weather application with location-based forecasts, interactive maps, and detailed weather analytics.",
-      image: "https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=800",
-      technologies: ["React", "Weather API", "Chart.js", "PWA"],
-      github: "https://github.com",
-      live: "https://example.com",
+      title: "30days Essence",
+      description: "本当に必要なものだけを手に入れるためのほしい物リストアプリ ※ユーザー機能未実装",
+      image: "/images/works_002.jpg",
+      technologies: ["Next.js","TypeScript", "Tailwind CSS", "Supabase","Copilot"],
+      github: "https://github.com/o-kabe12/30days-essence",
+      live: "https://30days-essence-1v2a.vercel.app/",
       featured: false
     },
-    {
-      title: "Portfolio Website",
-      description: "Responsive portfolio website showcasing modern design principles, smooth animations, and optimized performance.",
-      image: "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800",
-      technologies: ["React", "TypeScript", "Tailwind", "Framer Motion"],
-      github: "https://github.com",
-      live: "https://example.com",
-      featured: false
-    },
-    {
-      title: "Blockchain Voting System",
-      description: "Secure voting platform built on blockchain technology, ensuring transparency and immutable voting records.",
-      image: "https://images.pexels.com/photos/8728380/pexels-photo-8728380.jpeg?auto=compress&cs=tinysrgb&w=800",
-      technologies: ["Solidity", "Web3.js", "React", "Ethereum"],
-      github: "https://github.com",
-      live: "https://example.com",
-      featured: true
-    }
   ];
 
   return (
-    <section id="projects" className="py-20 bg-black">
+    <section id="works" className="py-20 bg-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl sm:text-5xl font-bold mb-4">
             <span className="bg-gradient-to-r from-blue-400 to-emerald-400 bg-clip-text text-transparent">
-              Featured Projects
+              My Work
             </span>
           </h2>
           <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-            A showcase of my recent work and creative solutions
+            This area shows my work
           </p>
         </div>
 
@@ -149,7 +112,7 @@ const Projects = () => {
 
         <div className="text-center mt-12">
           <a
-            href="https://github.com"
+            href="https://github.com/o-kabe12?tab=repositories"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-blue-500 to-emerald-500 
@@ -165,4 +128,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default Works;
