@@ -40,7 +40,7 @@ const About = () => {
             About Me
           </span>
         </h2>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 sm:mt-8 lg:mt-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mt-8 lg:mt-16 items-center">
           {/* Image and Stats */}
           <div className="space-y-8">
             {/* Profile Image */}

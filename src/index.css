@@ -77,3 +77,10 @@ a:focus-visible {
 #about .splide .splide__list{
   height: 100% !important;
 }
+
+@media screen and (max-width: 640px) {
+  #about .splide .splide__list{
+    display: flex !important;
+    align-items: center !important;
+  }
+}
