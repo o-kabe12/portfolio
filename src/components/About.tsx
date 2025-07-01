@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { Splide, SplideSlide } from '@splidejs/react-splide';
+import '@splidejs/react-splide/css';
 
 const About = () => {
   const [showAnime, setShowAnime] = useState(true);
@@ -16,6 +18,18 @@ const About = () => {
     "小市民シリーズ",
     "無職転生"
   ]
+
+  const splideOptions = {
+    type: 'fade',
+    rewind: true,
+    perPage: 1,
+    autoplay: true,
+    interval: 5000,
+    arrows: false,
+    pagination: false,
+    drag: false,
+    pauseOnHover: false,
+  };
 
 
   return (
@@ -58,7 +72,7 @@ const About = () => {
                   趣味は、風景写真を撮ることと筋トレです。アニメは大好きなので、よく見ています。書く事がないので、好きなアニメと撮った風景写真でも載せておきます。
                 </p>
                 <div>
-                  <div className="flex justify-center mb-4">
+                  <div className="flex justify-center my-10">
                     <button
                       className={`w-[150px] px-4 py-2 rounded-l-lg ${showAnime ? 'bg-blue-500 text-white' : 'bg-gray-700 text-gray-300'} hover:bg-blue-600`}
                       onClick={() => setShowAnime(true)}
@@ -88,10 +102,49 @@ const About = () => {
                   ) : (
                     <>
                       <h3 className="text-center font-bold mb-4">風景写真</h3>
-                      <div className="flex items-center justify-center p-6 border border-gray-300 rounded-lg sm:max-h-[360px] sm:min-h-[360px] sm:h-[360px] max-h-[400px] min-h-[400px] h-[400px]">
-                        <div className="h-auto sm:h-full">
-                          <img src="/images/img_001.jpg" alt="" className="w-auto h-full" />
-                        </div>
+                      <div className="slider-container flex items-center justify-center p-6 border border-gray-300 rounded-lg sm:max-h-[360px] sm:min-h-[360px] sm:h-[360px] max-h-[400px] min-h-[400px] h-[400px]">
+                        <Splide options={splideOptions} aria-label="Fading Slider">
+                          <SplideSlide>
+                            <div className="flex justify-center h-auto sm:h-full">
+                              <img src="/images/img_001.jpg" alt="" className="w-auto h-full" />
+                            </div>
+                          </SplideSlide>
+                          <SplideSlide>
+                            <div className="flex justify-center h-auto sm:h-full">
+                              <img src="/images/img_002.jpg" alt="" className="w-auto h-full" />
+                            </div>
+                          </SplideSlide>
+                          <SplideSlide>
+                            <div className="flex justify-center h-auto sm:h-full">
+                              <img src="/images/img_003.jpg" alt="" className="w-auto h-full" />
+                            </div>
+                          </SplideSlide>
+                          <SplideSlide>
+                            <div className="flex justify-center h-auto sm:h-full">
+                              <img src="/images/img_004.jpg" alt="" className="w-auto h-full" />
+                            </div>
+                          </SplideSlide>
+                          <SplideSlide>
+                            <div className="flex justify-center h-auto sm:h-full">
+                              <img src="/images/img_005.jpg" alt="" className="w-auto h-full" />
+                            </div>
+                          </SplideSlide>
+                          <SplideSlide>
+                            <div className="flex justify-center h-auto sm:h-full">
+                              <img src="/images/img_006.jpg" alt="" className="w-auto h-full" />
+                            </div>
+                          </SplideSlide>
+                          <SplideSlide>
+                            <div className="flex justify-center h-auto sm:h-full">
+                              <img src="/images/img_007.jpg" alt="" className="w-auto h-full" />
+                            </div>
+                          </SplideSlide>
+                          <SplideSlide>
+                            <div className="flex justify-center h-auto sm:h-full">
+                              <img src="/images/img_008.jpg" alt="" className="w-auto h-full" />
+                            </div>
+                          </SplideSlide>
+                        </Splide>
                       </div>
                     </>
                   )}

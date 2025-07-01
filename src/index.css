@@ -64,3 +64,16 @@ a:focus-visible {
   outline: 2px solid #3b82f6;
   outline-offset: 2px;
 }
+
+#about .splide{
+  height: 100% !important;
+}
+#about .splide .splide__track{
+  height: 100% !important;
+}
+#about .splide .splide__track{
+  height: 100% !important;
+}
+#about .splide .splide__list{
+  height: 100% !important;
+}
