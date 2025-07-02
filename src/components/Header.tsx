@@ -1,6 +1,8 @@
 import { useState} from 'react';
 import { Menu, X, Github } from 'lucide-react';
 import XIcon from '../assets/img/XIcon';
+import NoteIcon from '../assets/img/NoteIcon';
+import ZennIcon from '../assets/img/ZennIcon';
 
 
 const Header = () => {
@@ -39,12 +41,20 @@ const Header = () => {
           {/* Social Links */}
           <div className="hidden md:flex items-center space-x-4">
             <a href="https://github.com/o-kabe12" target="_blank" rel="noopener noreferrer" 
-               className="text-gray-400 hover:text-white transition-colors duration-200">
-              <Github size={20} />
+               className="text-gray-400 hover:opacity-70 transition-opacity duration-200 cursor-pointer">
+              <Github size={20} color='#fff'/>
             </a>
             <a href="https://x.com/8mNjXtrehu33800" target="_blank" rel="noopener noreferrer" 
-               className="text-gray-400 hover:text-white transition-colors duration-200">
-              <XIcon size={20} color="#9CA3AF" className='hover:brightness-0 hover:invert hover:saturate-0 hover:filter hover:contrast-200' />
+               className="text-gray-400 hover:opacity-70 transition-opacity duration-200 cursor-pointer">
+              <XIcon size={20} className='hover:brightness-0 hover:invert hover:saturate-0 hover:filter hover:contrast-200' />
+            </a>
+            <a href="https://note.com/firm_orca8445" target="_blank" rel="noopener noreferrer" 
+               className="text-gray-400 hover:opacity-70 transition-opacity duration-200 cursor-pointer">
+              <NoteIcon size={20} />
+            </a>
+            <a href="https://zenn.dev/koo1201" target="_blank" rel="noopener noreferrer" 
+               className="text-gray-400 hover:opacity-70 transition-opacity duration-200 cursor-pointer">
+              <ZennIcon size={20} />
             </a>
           </div>
 
@@ -73,11 +83,19 @@ const Header = () => {
               <div className="flex justify-center space-x-6 mt-4 pt-4 border-t border-gray-800">
                 <a href="https://github.com/o-kabe12/" target="_blank" rel="noopener noreferrer" 
                    className="text-gray-400 hover:text-white transition-colors duration-200">
-                  <Github size={20} />
+                  <Github size={20} color="#fff" />
                 </a>
                 <a href="https://x.com/8mNjXtrehu33800" target="_blank" rel="noopener noreferrer" 
                   className="text-gray-400 hover:text-white transition-colors duration-200">
-                  <XIcon size={20} color="#9CA3AF" className='hover:brightness-0 hover:invert hover:saturate-0 hover:filter hover:contrast-200' />
+                  <XIcon size={20} color="#fff" className='hover:brightness-0 hover:invert hover:saturate-0 hover:filter hover:contrast-200' />
+                </a>
+                <a href="https://note.com/firm_orca8445" target="_blank" rel="noopener noreferrer" 
+                  className="text-gray-400 hover:text-white transition-colors duration-200">
+                  <NoteIcon size={20} color="#fff" className='hover:brightness-0 hover:invert hover:saturate-0 hover:filter hover:contrast-200' />
+                </a>
+                <a href="https://zenn.dev/koo1201" target="_blank" rel="noopener noreferrer" 
+                  className="text-gray-400 hover:text-white transition-colors duration-200">
+                  <ZennIcon size={20} color="#fff" className='hover:brightness-0 hover:invert hover:saturate-0 hover:filter hover:contrast-200' />
                 </a>
               </div>
             </nav>

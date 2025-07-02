@@ -6,7 +6,7 @@ const Works = () => {
       title: "Jicoca - エンジニア向け自己紹介カードアプリ",
       description: "エンジニア向けの自己紹介カードを作成・共有できるアプリ。",
       image: "/images/works_001.jpg",
-      technologies: ["Next.js","TypeScript", "Tailwind CSS", "Supabase","Copilot"],
+      technologies: ["Next.js","TypeScript", "Tailwind CSS", "Supabase","Copilot","Vercel"],
       github: "https://github.com/o-kabe12/self-introduction-card",
       live: "https://self-introduction-card.vercel.app/",
       featured: false
@@ -15,9 +15,18 @@ const Works = () => {
       title: "30days Essence",
       description: "本当に必要なものだけを手に入れるためのほしい物リストアプリ ※ユーザー機能未実装",
       image: "/images/works_002.jpg",
-      technologies: ["Next.js","TypeScript", "Tailwind CSS", "Supabase","Copilot"],
+      technologies: ["Next.js","TypeScript", "Tailwind CSS", "Supabase","Copilot","Vercel"],
       github: "https://github.com/o-kabe12/30days-essence",
       live: "https://30days-essence-1v2a.vercel.app/",
+      featured: false
+    },
+    {
+      title: "CalPlog",
+      description: "１日のカロリーとタンパク質を簡単に計算・記録できるアプリです。",
+      image: "/images/works_003.jpg",
+      technologies: ["Next.js","TypeScript", "Tailwind CSS", "firebase","Copilot","Vercel","NextAuth.js"],
+      github: "https://github.com/o-kabe12/calplog",
+      live: "https://calplog.vercel.app/",
       featured: false
     },
   ];

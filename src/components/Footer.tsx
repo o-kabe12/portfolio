@@ -1,6 +1,7 @@
 import { Github, Heart } from 'lucide-react';
 import XIcon from '../assets/img/XIcon';
 import NoteIcon from '../assets/img/NoteIcon';
+import ZennIcon from '../assets/img/ZennIcon';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -9,6 +10,7 @@ const Footer = () => {
     { icon: <Github size={20} color="#fff" />, href: "https://github.com/o-kabe12/", label: "GitHub" },
     { icon: <XIcon size={20} color="#fff" />, href: "https://x.com/8mNjXtrehu33800", label: "X" },
     { icon: <NoteIcon size={20} color="#fff" />, href: "https://note.com/firm_orca8445", label: "Note" },
+    { icon: <ZennIcon size={20} color="#fff" />, href: "https://zenn.dev/koo1201", label: "Zenn" },
   ];
 
   const quickLinks = [
