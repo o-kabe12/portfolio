@@ -29,8 +29,9 @@ const Footer = () => {
           {/* Brand Section */}
           <div className="w-full md:w-1/2 space-y-4">
             <p className="text-gray-400 leading-relaxed">
-              Crafting digital experiences with passion and precision. 
-              Let's create something amazing together.
+              サイトを見てくださり、ありがとうございます！<br/>
+              日々、新しい技術と向き合い、より良いものを<br/>
+              創り出すことに挑戦し続けています。
             </p>
             <div className="flex space-x-4">
               {socialLinks.map((link) => (

@@ -19,8 +19,8 @@ const Skills = () => {
       skills: [
         { name: "XD / Figma cording", level: 90 },
         { name: "Git", level: 80 },
-        { name: "Supabase", level: 20 },
-        { name: "生成AI（ChatGPT / Copilot等）活用", level: 75 }
+        { name: "Supabase", level: 10 },
+        { name: "生成AI（ChatGPT / Copilot等）活用", level: 70 }
       ],
       color: "from-orange-500 to-red-500"
     }

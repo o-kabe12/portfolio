@@ -21,6 +21,7 @@ const About = () => {
 
   const splideOptions = {
     type: 'fade',
+    speed: 1000,
     rewind: true,
     perPage: 1,
     autoplay: true,
