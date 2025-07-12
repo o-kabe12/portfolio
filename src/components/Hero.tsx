@@ -64,7 +64,7 @@ const Hero = () => {
         </div>
 
         <p className="text-xl text-gray-400 max-w-2xl mx-auto mb-12 leading-relaxed">
-          このサイトは大壁のポートフォリオサイトです。
+          このサイトはokabeのポートフォリオサイトです。
           <br/>
           私のスキルや作品を紹介していますので、ぜひご覧ください。
           <br/>

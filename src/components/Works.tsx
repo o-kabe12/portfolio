@@ -29,6 +29,15 @@ const Works = () => {
       live: "https://calplog.vercel.app/",
       featured: false
     },
+    {
+      title: "MyHabit",
+      description: "毎日を記録し、自己成長をサポートする習慣トラッカーアプリ",
+      image: "/images/works_004.jpg",
+      technologies: ["Next.js","TypeScript", "Tailwind CSS", "Neon","Prisma","Vercel","NextAuth.js","Gemini"],
+      github: "https://github.com/o-kabe12/myhabit",
+      live: "https://myhabit-dusky.vercel.app/",
+      featured: true
+    },
   ];
 
   return (
@@ -57,7 +66,7 @@ const Works = () => {
                 <div className="absolute top-4 left-4 z-10">
                   <div className="flex items-center bg-gradient-to-r from-blue-500 to-emerald-500 px-3 py-1 rounded-full">
                     <Sparkles size={14} className="mr-1 text-white" />
-                    <span className="text-white text-sm font-medium">Featured</span>
+                    <span className="text-white text-sm font-medium">NEW</span>
                   </div>
                 </div>
               )}
