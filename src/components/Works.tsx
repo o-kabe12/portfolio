@@ -11,15 +11,15 @@ const Works = () => {
       live: "https://self-introduction-card.vercel.app/",
       featured: false
     },
-    {
-      title: "30days Essence",
-      description: "本当に必要なものだけを手に入れるためのほしい物リストアプリ ※ユーザー機能未実装",
-      image: "/images/works_002.jpg",
-      technologies: ["Next.js","TypeScript", "Tailwind CSS", "Supabase","Copilot","Vercel"],
-      github: "https://github.com/o-kabe12/30days-essence",
-      live: "https://30days-essence-1v2a.vercel.app/",
-      featured: false
-    },
+    // {
+    //   title: "30days Essence",
+    //   description: "本当に必要なものだけを手に入れるためのほしい物リストアプリ ※ユーザー機能未実装",
+    //   image: "/images/works_002.jpg",
+    //   technologies: ["Next.js","TypeScript", "Tailwind CSS", "Supabase","Copilot","Vercel"],
+    //   github: "https://github.com/o-kabe12/30days-essence",
+    //   live: "https://30days-essence-1v2a.vercel.app/",
+    //   featured: false
+    // },
     {
       title: "CalPlog",
       description: "１日のカロリーとタンパク質を簡単に計算・記録できるアプリです。",
