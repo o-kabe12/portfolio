@@ -9,7 +9,8 @@ const Works = () => {
       technologies: ["Next.js","TypeScript", "Tailwind CSS", "Supabase","Copilot","Vercel"],
       github: "https://github.com/o-kabe12/self-introduction-card",
       live: "https://self-introduction-card.vercel.app/",
-      featured: false
+      featured: false,
+      xlink: "https://x.com/8mnjxtrehu33800/status/1901142613845213467?s=46&t=1j5KEFvf1Vuam682Eiemnw"
     },
     // {
     //   title: "30days Essence",
@@ -27,7 +28,8 @@ const Works = () => {
       technologies: ["Next.js","TypeScript", "Tailwind CSS", "firebase","Copilot","Vercel","NextAuth.js"],
       github: "https://github.com/o-kabe12/calplog",
       live: "https://calplog.vercel.app/",
-      featured: false
+      featured: false,
+      xlink: "https://x.com/8mnjxtrehu33800/status/1942099280401203353?s=46&t=1j5KEFvf1Vuam682Eiemnw"
     },
     {
       title: "MyHabit",
@@ -36,7 +38,18 @@ const Works = () => {
       technologies: ["Next.js","TypeScript", "Tailwind CSS", "Neon","Prisma","Vercel","NextAuth.js","Gemini"],
       github: "https://github.com/o-kabe12/myhabit",
       live: "https://myhabit-dusky.vercel.app/",
-      featured: true
+      featured: false,
+      xlink: "https://x.com/8mnjxtrehu33800/status/1944048018397049330?s=61"
+    },
+    {
+      title: "NestThink",
+      description: "ツェッテルカステン × ジャーナルアプリ",
+      image: "/images/works_005.jpg",
+      technologies: ["Next.js","TypeScript", "Tailwind CSS", "supabase","Vercel","cursor","Claude"],
+      github: "https://github.com/o-kabe12/nesthink",
+      live: "https://nestthink.vercel.app/",
+      featured: true,
+      xlink: "https://x.com/8mnjxtrehu33800/status/1950201595838238855?s=61"
     },
   ];
 
@@ -51,6 +64,9 @@ const Works = () => {
           </h2>
           <p className="text-xl text-gray-400 max-w-2xl mx-auto">
             This area shows my work
+          </p>
+          <p className="text-sm text-gray-400 max-w-2xl mx-auto mt-2">
+            ※作品は全てプロトタイプです
           </p>
         </div>
 
@@ -118,6 +134,17 @@ const Works = () => {
                     <ExternalLink size={18} className="mr-2" />
                     <span className="text-sm">Live Demo</span>
                   </a>
+                  {project.xlink && (
+                    <a
+                      href={project.xlink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center text-gray-400 hover:text-blue-400 transition-colors duration-200"
+                    >
+                      <ExternalLink size={18} className="mr-2" />
+                      <span className="text-sm">Xでの紹介</span>
+                    </a>
+                  )}
                 </div>
               </div>
 

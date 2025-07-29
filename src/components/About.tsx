@@ -25,7 +25,7 @@ const About = () => {
     rewind: true,
     perPage: 1,
     autoplay: true,
-    interval: 5000,
+    interval: 3000,
     arrows: false,
     pagination: false,
     drag: false,
